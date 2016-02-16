@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mycompany.voting.ElectionCandidateVote">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vote"
+        android:id="@+id/textView_vote"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_graph"
+        android:layout_below="@+id/textView_vote"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f5f9f8"
+        card_view:cardCornerRadius="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bjp"
+            android:id="@+id/bjp_img"
+            android:paddingLeft="-150dp"
+            />
+
+        <TextView
+            android:id="@+id/bjp_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BJP"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/card_view_graph"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/mla_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Smriti Irani"
+
+            android:layout_alignTop="@+id/bjp_img"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:layout_gravity="bottom"
+            android:paddingTop="25dp"
+            />
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2_graph"
+        android:layout_below="@+id/card_view_graph"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f5f9f8"
+        card_view:cardCornerRadius="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cong"
+            android:id="@+id/cong_img"
+            android:paddingLeft="-265dp"
+            />
+
+        <TextView
+            android:id="@+id/cong_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Congress"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/card_view_graph"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/mlacong_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Rahul"
+
+            android:layout_alignTop="@+id/cong_img"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:layout_gravity="bottom"
+            android:paddingTop="25dp"
+            />
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view3_graph"
+        android:layout_below="@+id/card_view2_graph"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f5f9f8"
+        card_view:cardCornerRadius="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ncp"
+            android:id="@+id/ncp_img"
+            android:paddingLeft="-284dp"
+            />
+
+        <TextView
+            android:id="@+id/aap_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="NCP"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/card_view2_graph"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/mlancp_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="name!"
+
+            android:layout_alignTop="@+id/cong_img"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:layout_gravity="bottom"
+            android:paddingTop="25dp"
+            />
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

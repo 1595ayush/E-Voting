@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mycompany.voting.CheckDetailsAadhar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/textView_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="UID Number"
+        android:id="@+id/textView_Uid"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView_name"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gender"
+        android:id="@+id/textView_gender"
+        android:layout_below="@+id/textView_Uid"
+        android:layout_alignStart="@+id/textView_Uid"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Location"
+        android:id="@+id/textView_Location"
+        android:layout_below="@+id/textView_gender"
+        android:layout_alignStart="@+id/textView_gender"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Year Of Birth"
+        android:id="@+id/textView_yob"
+        android:layout_below="@+id/textView_Location"
+        android:layout_alignStart="@+id/textView_Location"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raunaq Sanjay Abhyankar"
+        android:id="@+id/textView_putName"
+        android:layout_alignTop="@+id/textView_name"
+        android:layout_above="@+id/textView_Uid"
+        android:textAlignment="textEnd"
+        android:textSize="14dp"
+        android:layout_alignEnd="@+id/textView_putLocation"
+        android:layout_toEndOf="@+id/textView_Uid"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="201220132014"
+        android:id="@+id/textView_putUid"
+        android:layout_alignTop="@+id/textView_Uid"
+        android:layout_alignStart="@+id/textView_putName"
+        android:layout_above="@+id/textView_gender"
+        android:textAlignment="textEnd"
+        android:textSize="17dp"
+        android:layout_alignEnd="@+id/textView_putLocation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:id="@+id/textView_putGender"
+        android:layout_alignTop="@+id/textView_gender"
+        android:layout_alignStart="@+id/textView_putUid"
+        android:layout_alignBottom="@+id/textView_gender"
+        android:textAlignment="textEnd"
+        android:textSize="17dp"
+        android:layout_alignEnd="@+id/textView_putLocation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mumbai"
+        android:id="@+id/textView_putLocation"
+        android:layout_alignTop="@+id/textView_Location"
+        android:layout_alignBottom="@+id/textView_Location"
+        android:textAlignment="textEnd"
+        android:textSize="17dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView_Uid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19950"
+        android:id="@+id/textView_putyob"
+        android:layout_alignTop="@+id/textView_yob"
+        android:layout_alignBottom="@+id/textView_yob"
+        android:textAlignment="textEnd"
+        android:textSize="17dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView_Uid" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Are These Details Correct?"
+        android:id="@+id/textView_correctDetails"
+        android:textAlignment="center"
+        android:layout_above="@+id/bt_no_details_aadhar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NO"
+        android:background="#eb4c33"
+        android:textColor="#f5f5f5"
+        android:shadowColor="#9e0a05"
+        android:shadowRadius="20"
+        android:id="@+id/bt_no_details_aadhar"
+        android:layout_alignTop="@+id/btn_yes_details_aadhar"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="YES"
+        android:background="#12eb6e"
+        android:shadowColor="#FF078B3F"
+        android:shadowRadius="20"
+        android:textColor="#f5f5f5"
+
+        android:id="@+id/btn_yes_details_aadhar"
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView_putLocation" />
+
+
+</RelativeLayout>
